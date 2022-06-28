@@ -1,0 +1,56 @@
+.modalContainer {
+  z-index: 10;
+  top: 40%;
+  position: absolute;
+  border-radius: 12px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #00C49A;
+}
+
+.modalContainer h2 span {
+  color: #00C49A;
+  font-family: 'Pattaya', sans-serif\;;
+}
+
+.modalContainer a {
+  color: #140027;
+  font-size: 30px;
+  background-color: #dcdaeeb0;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0 10px;
+  background-color: transparent;
+  border-bottom: 5px solid #00C49A;
+}
+
+.modalContainer a:hover {
+  background-color: #00C49A;
+}
+
+.modalContainer p {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=Modal.module.css.map */

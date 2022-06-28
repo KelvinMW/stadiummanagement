@@ -1,0 +1,130 @@
+@import '../CSScommons/commons'
+
+.diagonalPattern
+    @include diagonalPattern
+    top: 100%
+    right: 70%
+
+.diagonalPatternDos
+    @include diagonalPattern
+    top: 380%
+    left: 70%
+
+.Landing
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    .content
+        padding-top: 70px
+        width: 1100px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .hero, .player, .host
+            display: flex
+            align-items: center
+            padding: 40px
+            margin-block: 40px
+        .hero
+            color: $color-text
+            min-height: 80vh
+            gap: 30px
+            position: relative
+            .text
+                width: 70%
+                position: relative
+                h1
+                    font-size: 70px
+                    font-weight: 700
+                    line-height: 1.1
+                    margin-bottom: 30px
+                p
+                    font-size: 23px
+                    span
+                        color: $color-detail
+                        font-family: 'Pattaya', sans-serif
+            .bgPattern
+                position: absolute
+                width: 300px
+                height: 500px
+                background-image: radial-gradient($color-detail 2px, transparent 2px)
+                background-size: 32px 32px
+                background-color: transparent
+                top: 100px
+                right: 0
+            .images
+                width: 40%
+                height: 90%
+                background-image: linear-gradient(to bottom, $color-detail, #ffffff00)
+                border-radius: 500px 500px 0px 0px
+                padding: 30px
+                img
+                    width: 100%
+        .player, .host
+            color: $color-header
+            width: 100%
+            padding: 0px
+            min-height: 630px
+            position: relative
+            background-image: url('../../assets/9.jpg')
+            background-size: 120%
+            text-align: left
+            margin-block: 80px
+            @include Sombra
+            @include BordeRadio
+            .text
+                position: absolute
+                left: 100px
+                top: 100px
+                height: 450px
+                z-index: 1
+                h2
+                    font-size: 55px
+                    font-weight: 700
+                    margin-right: 40px
+                    padding: 10px
+                    padding-bottom: 0px
+                    background: rgba(255,255,255,0.15)
+                    -webkit-backdrop-filter: blur(4px)
+                    backdrop-filter: blur(4px)
+                    span
+                        color: $color-detail
+                p
+                    width: 500px
+                    font-size: 24px
+                    background: rgba(255,255,255,0.15)
+                    -webkit-backdrop-filter: blur(4px)
+                    backdrop-filter: blur(4px)
+                    padding: 10px
+                    padding-top: 0px
+                a
+                    position: absolute
+                    bottom: 0
+                    button
+                        @include botonLanding
+                    button:hover
+                        color:
+                        background-color: $color-detail
+                        transform: scale(105%)
+                        @include Sombra
+        .player::after, .host::after
+            @include marcoInterno
+        .host
+            background-image: url('../../assets/13.jpg')
+            text-align: right
+            .text
+                position: absolute
+                right: 100px
+                top: 100px
+                height: 450px
+                z-index: 1
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                h2
+                    margin: 0px
+                p
+                    span
+                        color: $color-detail
+                        font-family: 'Pattaya', sans-serif
