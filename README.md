@@ -1,4 +1,4 @@
-<h1>Canchera</h1>
+<h1>Stadium</h1>
 <img src="https://github.com/jonrovner/Canchera/blob/main/canchera1.png" />
 <p>Una SPA para reservar canchas de fútbol</p>
 <p>Football field booking SPA</p>
